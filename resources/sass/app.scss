@@ -1,14 +1,11 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
 // Variables
 @import 'variables';
 
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
-
-// Fontawesome
-@import '~@fortawesome/fontawesome-free/scss/fontawesome';
-@import '~@fortawesome/fontawesome-free/scss/regular';
-@import '~@fortawesome/fontawesome-free/scss/solid';
-@import '~@fortawesome/fontawesome-free/scss/brands';
 
 /* universal */
 
@@ -29,7 +26,7 @@ body {
   margin-top: 0px;
 }
 
-/*页脚*/
+
 /* Sticky footer styles */
 html {
   position: relative;
