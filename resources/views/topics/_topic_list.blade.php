@@ -1,5 +1,5 @@
 @if (count($topics))
-  <ul class="list-unstyled">
+  <ul class="media-list">
     @foreach ($topics as $topic)
       <li class="media">
         <div class="media-left">
@@ -12,7 +12,7 @@
 
           <div class="media-heading mt-0 mb-1">
             <a href="{{ route('topics.show', [$topic->id]) }}" title="{{ $topic->title }}">
-              {{ $topic->title }}
+              {{ $topic->user->name }}
             </a>
             <a class="float-right" href="{{ route('topics.show', [$topic->id]) }}">
               <span class="badge badge-secondary badge-pill"> {{ $topic->reply_count }} </span>
