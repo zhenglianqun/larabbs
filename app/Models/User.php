@@ -9,8 +9,12 @@ use Illuminate\Auth\MustVerifyEmail as MustVerifyEmailTrait;
 //消息通知
 use Auth;
 
+//多角色用户权限
+use Spatie\Permission\Traits\HasRoles;
+
 class User extends Authenticatable implements MustVerifyEmailContract
 {
+    use HasRoles;
     use MustVerifyEmailTrait;
 
     use Notifiable {
