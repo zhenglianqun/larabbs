@@ -4,9 +4,9 @@ namespace App\Models;
 
 class Topic extends Model
 {
-    protected $fillable = [
+   /* protected $fillable = [
         'title', 'body', 'category_id', 'excerpt', 'slug'
-    ];
+    ];*/
 
     public function category()
     {
@@ -48,9 +48,9 @@ class Topic extends Model
         return route('topics.show', array_merge([$this->id, $this->slug], $params));
     }
 
-    /*protected $fillable = [
+    protected $fillable = [
         'title', 'body', 'category_id', 'excerpt', 'slug'
-    ];*/
+    ];
 
     public function replies()
     {
